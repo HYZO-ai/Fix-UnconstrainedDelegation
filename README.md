@@ -48,9 +48,3 @@ Ce script a pour but de :
 - PowerShell 5.1+ ou PowerShell Core.
 - Module `ActiveDirectory` disponible.
 
----
-
-## 📂 Exemple d’utilisation
-
-```powershell
-.\Fix-UnconstrainedDelegation.ps1
