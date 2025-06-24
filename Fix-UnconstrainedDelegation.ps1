@@ -147,14 +147,14 @@ while ($true) {
     switch ($choice) {
         '1' {
             Show-Tutorial -Option '1'
-            $exportPath = Read-Host "Chemin de l'export CSV (defaut : delegation_audit.csv)"
+            $exportPath = Read-Host "Nom du fichier pour l'export en CSV (defaut : delegation_audit.csv)"
             if (-not $exportPath) { $exportPath = "delegation_audit.csv" }
             Export-DelegationReport -ExportPath $exportPath
             Pause
         }
         '2' {
             Show-Tutorial -Option '2'
-            $backupPath = Read-Host "Chemin du fichier de backup JSON (defaut : delegation_backup.json)"
+            $backupPath = Read-Host "Nom du fichier pour l'export en JSON (defaut : delegation_backup.json)"
             if (-not $backupPath) { $backupPath = "delegation_backup.json" }
             Fix-Delegation -BackupPath $backupPath
             Pause
